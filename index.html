@@ -1,0 +1,1022 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO básico -->
+    <title>Angel Aldrete | Producción Musical, Composición y Teoría</title>
+
+    <meta
+      name="description"
+      content="Clases de producción musical, composición y teoría con Angel Aldrete. Más de 18 años de experiencia. Evaluación inicial sin costo."
+    />
+
+    <meta
+      name="keywords"
+      content="producción musical, composición musical, teoría musical, clases de música online, Reaper, MIDI, orquestación, música para danza, música para videojuegos"
+    />
+
+    <meta name="author" content="Angel Aldrete" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://angelaldrete.com/" />
+
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:title" content="Angel Aldrete · Producción Musical" />
+    <meta
+      property="og:description"
+      content="Clases de composición, teoría y producción musical con 18+ años de experiencia."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://angelaldrete.com/" />
+    <meta property="og:image" content="https://angelaldrete.com/preview.jpg" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="Angel Aldrete Música" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Angel Aldrete · Música" />
+    <meta
+      name="twitter:description"
+      content="Producción musical, composición y teoría. Evaluación inicial gratuita."
+    />
+    <meta name="twitter:image" content="https://angelaldrete.com/preview.jpg" />
+    <meta name="twitter:creator" content="@angelaldrete" />
+
+    <!-- Multilenguaje / Hreflang -->
+    <link rel="alternate" href="https://angelaldrete.com/" hreflang="es" />
+    <link rel="alternate" href="https://angelaldrete.com/en/" hreflang="en" />
+    <link
+      rel="alternate"
+      href="https://angelaldrete.com/"
+      hreflang="x-default"
+    />
+
+    <!-- Favicon inline (data URI) -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23c97c5b'/%3E%3Cpath d='M35 30 L35 70 L65 50 Z' fill='%230f0a08'/%3E%3C/svg%3E"
+      type="image/svg+xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23c97c5b'/%3E%3Cpath d='M35 30 L35 70 L65 50 Z' fill='%230f0a08'/%3E%3C/svg%3E"
+    />
+    <meta name="theme-color" content="#c97c5b" />
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <style>
+      :root {
+        --bg-music: #0f0a08;
+        --accent-music: #c97c5b;
+        --accent-glow: rgba(201, 124, 91, 0.3);
+        --card-bg: rgba(255, 255, 255, 0.03);
+      }
+
+      body {
+        background: var(--bg-music);
+        color: #eee;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        padding: 0;
+      }
+
+      .music-hero {
+        text-align: center;
+        padding: 60px 20px 30px;
+        background: linear-gradient(135deg, #1a120e, #0f0a08);
+      }
+
+      .music-hero h1 {
+        font-size: clamp(2rem, 5vw, 3rem);
+        margin-bottom: 10px;
+        background: linear-gradient(135deg, #c97c5b, #a85e41);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .music-hero .subtitle {
+        font-size: 1.1rem;
+        opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto 20px;
+      }
+
+      .stats-row {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin: 20px 0;
+      }
+
+      .stat {
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #c97c5b;
+        line-height: 1;
+      }
+
+      .stat-label {
+        font-size: 0.85rem;
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .section {
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #c97c5b;
+      }
+
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: #c97c5b;
+        margin: 12px auto 0;
+        opacity: 0.5;
+      }
+
+      /* Selector de idioma */
+      .language-selector {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 100;
+        display: flex;
+        gap: 10px;
+        background: rgba(15, 10, 8, 0.8);
+        backdrop-filter: blur(5px);
+        padding: 8px 15px;
+        border-radius: 40px;
+        border: 1px solid rgba(201, 124, 91, 0.3);
+      }
+
+      .lang-btn {
+        background: transparent;
+        border: none;
+        color: #aaa;
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 4px 8px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .lang-btn:hover {
+        color: #c97c5b;
+      }
+
+      .lang-btn.active {
+        background: #c97c5b;
+        color: #0f0a08;
+      }
+
+      /* Reproductor grid */
+      .player-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .player-card {
+        background: var(--card-bg);
+        border: 1px solid rgba(201, 124, 91, 0.15);
+        border-radius: 12px;
+        padding: 18px;
+        transition: all 0.2s ease;
+      }
+
+      .player-card:hover {
+        border-color: rgba(201, 124, 91, 0.4);
+      }
+
+      .player-card h3 {
+        color: #c97c5b;
+        font-size: 1rem;
+        margin: 0 0 5px 0;
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      /* Reproductor minimal */
+      .custom-player {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+        padding: 8px 12px;
+      }
+
+      .play-btn {
+        background: #c97c5b;
+        border: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #0f0a08;
+        font-size: 0.9rem;
+        flex-shrink: 0;
+        transition: all 0.2s;
+      }
+
+      .play-btn:hover {
+        background: #d88d6c;
+        transform: scale(1.05);
+      }
+
+      .play-btn.playing {
+        background: #a85e41;
+      }
+
+      .track-name {
+        font-size: 0.85rem;
+        color: #c97c5b;
+        min-width: 65px;
+        font-weight: 500;
+      }
+
+      .progress-area {
+        flex: 1;
+        min-width: 100px;
+      }
+
+      .progress-bar {
+        width: 100%;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .progress-filled {
+        height: 100%;
+        background: #c97c5b;
+        width: 0%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: width 0.1s linear;
+      }
+
+      .progress-buffered {
+        height: 100%;
+        background: rgba(201, 124, 91, 0.3);
+        width: 0%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: width 0.2s ease;
+      }
+
+      .time-display {
+        font-size: 0.75rem;
+        opacity: 0.6;
+        min-width: 60px;
+        text-align: right;
+        font-family: monospace;
+      }
+
+      /* Roadmap pills compacto */
+      .roadmap-pills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        margin: 15px 0;
+      }
+
+      .pill {
+        background: rgba(201, 124, 91, 0.1);
+        border: 1px solid rgba(201, 124, 91, 0.2);
+        border-radius: 30px;
+        padding: 6px 16px;
+        font-size: 0.85rem;
+      }
+
+      .pill.level {
+        background: #c97c5b;
+        color: #0f0a08;
+        font-weight: 500;
+      }
+
+      /* Formulario compacto */
+      .contact-box {
+        max-width: 450px;
+        margin: 0 auto;
+        background: var(--card-bg);
+        border: 1px solid rgba(201, 124, 91, 0.2);
+        border-radius: 20px;
+        padding: 30px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px 16px;
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(201, 124, 91, 0.2);
+        border-radius: 30px;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.95rem;
+      }
+
+      .form-group input:focus,
+      .form-group select:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #c97c5b;
+      }
+
+      .submit-btn {
+        background: #c97c5b;
+        color: #0f0a08;
+        border: none;
+        padding: 14px 28px;
+        border-radius: 30px;
+        font-weight: 600;
+        cursor: pointer;
+        width: 100%;
+        font-size: 1rem;
+        transition: all 0.2s;
+      }
+
+      .submit-btn:hover {
+        background: #d88d6c;
+        transform: translateY(-2px);
+      }
+
+      .form-feedback {
+        margin-top: 15px;
+        padding: 12px;
+        border-radius: 30px;
+        text-align: center;
+        display: none;
+        font-size: 0.9rem;
+      }
+
+      .form-feedback.success {
+        background: rgba(76, 175, 80, 0.1);
+        border: 1px solid rgba(76, 175, 80, 0.3);
+        color: #a3ffa3;
+      }
+
+      .form-feedback.error {
+        background: rgba(255, 0, 0, 0.1);
+        border: 1px solid rgba(255, 0, 0, 0.3);
+        color: #ffa3a3;
+      }
+
+      .calendly-note {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.85rem;
+        opacity: 0.7;
+      }
+
+      .calendly-note strong {
+        color: #c97c5b;
+      }
+
+      /* Scroll personalizado */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #1a120e;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #c97c5b;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #d88d6c;
+      }
+
+      @media (max-width: 600px) {
+        .custom-player {
+          justify-content: space-between;
+        }
+
+        .contact-box {
+          padding: 20px;
+        }
+
+        .language-selector {
+          top: 10px;
+          right: 10px;
+          padding: 5px 10px;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MusicSchool",
+        "name": "Angel Aldrete Música",
+        "description": "Clases de producción musical, composición y teoría musical.",
+        "url": "https://angelaldrete.com",
+        "areaServed": "Worldwide",
+        "sameAs": [
+          "https://soundcloud.com/angelaldrete",
+          "https://youtube.com/@angelaldrete",
+          "https://instagram.com/angelaldrete"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "MXN",
+          "description": "Evaluación inicial sin costo"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Selector de idioma -->
+    <div class="language-selector" id="languageSelector">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <main>
+      <header class="music-hero">
+        <h1 id="hero-title">
+          Producción Musical y Composición — Angel Aldrete
+        </h1>
+        <p class="subtitle" id="hero-subtitle">
+          Producción · Composición · Teoría musical · 18 años
+        </p>
+
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-number">30+</div>
+            <div class="stat-label" id="stat-compositions">composiciones</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">6+</div>
+            <div class="stat-label" id="stat-dance">obras danza</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">∞</div>
+            <div class="stat-label" id="stat-flex">rutas flexibles</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title" id="catalog-title">Catálogo musical</h2>
+        <div id="player-grid" class="player-grid"></div>
+      </section>
+
+      <div class="section" style="background: rgba(201, 124, 91, 0.02)">
+        <h2 class="section-title" id="roadmap-title">Ruta de aprendizaje</h2>
+        <div class="roadmap-pills">
+          <span class="pill level" id="pill-fundamentals">Fundamentos</span>
+          <span class="pill" id="pill-theory">Teoría</span>
+          <span class="pill" id="pill-ear">Auditivo</span>
+          <span class="pill" id="pill-rhythm">Ritmo</span>
+        </div>
+        <div class="roadmap-pills">
+          <span class="pill level" id="pill-composition">Composición</span>
+          <span class="pill" id="pill-harmony">Armonía</span>
+          <span class="pill" id="pill-arrangement">Arreglos</span>
+          <span class="pill" id="pill-orchestration">Orquestación</span>
+        </div>
+        <div class="roadmap-pills">
+          <span class="pill level" id="pill-production">Producción</span>
+          <span class="pill" id="pill-reaper">Reaper</span>
+          <span class="pill" id="pill-midi">MIDI</span>
+          <span class="pill" id="pill-mix">Mezcla</span>
+        </div>
+        <div class="roadmap-pills">
+          <span class="pill level" id="pill-specializations"
+            >Especializaciones</span
+          >
+          <span class="pill" id="pill-dance">Danza</span>
+          <span class="pill" id="pill-games">Videojuegos</span>
+          <span class="pill" id="pill-audio">Audio</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title" id="contact-title">Empieza</h2>
+        <div class="contact-box">
+          <form id="musicContactForm">
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                id="input-name"
+                placeholder="Nombre"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                id="input-email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <select name="interest" id="select-interest" required>
+                <option value="" disabled selected id="interest-placeholder">
+                  Área de interés
+                </option>
+                <option value="composicion" id="interest-composition">
+                  Composición / Arreglos
+                </option>
+                <option value="produccion" id="interest-production">
+                  Producción / Reaper
+                </option>
+                <option value="teoria" id="interest-theory">
+                  Teoría / Armonía
+                </option>
+                <option value="danza" id="interest-dance">
+                  Música para danza
+                </option>
+                <option value="videojuegos" id="interest-games">
+                  Videojuegos
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select name="experience" id="select-experience" required>
+                <option value="" disabled selected id="level-placeholder">
+                  Nivel
+                </option>
+                <option value="beginner" id="level-beginner">
+                  Principiante
+                </option>
+                <option value="intermediate" id="level-intermediate">
+                  Intermedio
+                </option>
+                <option value="advanced" id="level-advanced">Avanzado</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                rows="2"
+                id="input-message"
+                placeholder="Objetivos"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="submit-btn">
+              Enviar
+            </button>
+            <div id="formFeedback" class="form-feedback"></div>
+          </form>
+          <div class="calendly-note">
+            ⏱️ <strong id="eval-note">Evaluación sin costo:</strong>
+            <span id="eval-text">te contactaré en 24h</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Traducciones -->
+    <script>
+      const translations = {
+        es: {
+          "hero-title": "Producción Musical y Composición — Angel Aldrete",
+          "hero-subtitle":
+            "Producción · Composición · Teoría musical · 18 años",
+          "stat-compositions": "composiciones",
+          "stat-dance": "obras danza",
+          "stat-flex": "rutas flexibles",
+          "catalog-title": "Catálogo musical",
+          "roadmap-title": "Ruta de aprendizaje",
+          "pill-fundamentals": "Fundamentos",
+          "pill-theory": "Teoría",
+          "pill-ear": "Auditivo",
+          "pill-rhythm": "Ritmo",
+          "pill-composition": "Composición",
+          "pill-harmony": "Armonía",
+          "pill-arrangement": "Arreglos",
+          "pill-orchestration": "Orquestación",
+          "pill-production": "Producción",
+          "pill-reaper": "Reaper",
+          "pill-midi": "MIDI",
+          "pill-mix": "Mezcla",
+          "pill-specializations": "Especializaciones",
+          "pill-dance": "Danza",
+          "pill-games": "Videojuegos",
+          "pill-audio": "Audio",
+          "contact-title": "Empieza",
+          "input-name": "Nombre",
+          "input-email": "Email",
+          "interest-placeholder": "Área de interés",
+          "interest-composition": "Composición / Arreglos",
+          "interest-production": "Producción / Reaper",
+          "interest-theory": "Teoría / Armonía",
+          "interest-dance": "Música para danza",
+          "interest-games": "Videojuegos",
+          "level-placeholder": "Nivel",
+          "level-beginner": "Principiante",
+          "level-intermediate": "Intermedio",
+          "level-advanced": "Avanzado",
+          "input-message": "Objetivos",
+          "submit-btn": "Enviar",
+          "eval-note": "Evaluación sin costo:",
+          "eval-text": "te contactaré en 24h",
+        },
+        en: {
+          "hero-title": "Music Production & Composition — Angel Aldrete",
+          "hero-subtitle": "Production · Composition · Music Theory · 18 years",
+          "stat-compositions": "compositions",
+          "stat-dance": "dance works",
+          "stat-flex": "flexible paths",
+          "catalog-title": "Music Catalog",
+          "roadmap-title": "Learning Path",
+          "pill-fundamentals": "Fundamentals",
+          "pill-theory": "Theory",
+          "pill-ear": "Ear Training",
+          "pill-rhythm": "Rhythm",
+          "pill-composition": "Composition",
+          "pill-harmony": "Harmony",
+          "pill-arrangement": "Arrangement",
+          "pill-orchestration": "Orchestration",
+          "pill-production": "Production",
+          "pill-reaper": "Reaper",
+          "pill-midi": "MIDI",
+          "pill-mix": "Mixing",
+          "pill-specializations": "Specializations",
+          "pill-dance": "Dance",
+          "pill-games": "Video Games",
+          "pill-audio": "Audio",
+          "contact-title": "Get Started",
+          "input-name": "Name",
+          "input-email": "Email",
+          "interest-placeholder": "Area of interest",
+          "interest-composition": "Composition / Arrangement",
+          "interest-production": "Production / Reaper",
+          "interest-theory": "Theory / Harmony",
+          "interest-dance": "Music for Dance",
+          "interest-games": "Video Games",
+          "level-placeholder": "Level",
+          "level-beginner": "Beginner",
+          "level-intermediate": "Intermediate",
+          "level-advanced": "Advanced",
+          "input-message": "Goals",
+          "submit-btn": "Send",
+          "eval-note": "Free assessment:",
+          "eval-text": "I'll contact you within 24h",
+        },
+      };
+    </script>
+
+    <script>
+      const tracks = [
+        { file: "assets/15ñera.mp3", display: "15ñera" },
+        { file: "assets/Aliens.mp3", display: "Aliens" },
+        { file: "assets/AliensP2.mp3", display: "Aliens P2" },
+        { file: "assets/Amantes.mp3", display: "Amantes" },
+        { file: "assets/CantoFengari.mp3", display: "Canto Fengari" },
+        { file: "assets/Carta15ñera.mp3", display: "Carta 15ñera" },
+        { file: "assets/CartaAmantes.mp3", display: "Carta Amantes" },
+        { file: "assets/CartaMama.mp3", display: "Carta Mamá" },
+        { file: "assets/CartaSuicidio.mp3", display: "Carta Suicidio" },
+        { file: "assets/Cubo.mp3", display: "Cubo" },
+        { file: "assets/Dolorosas.mp3", display: "Dolorosas" },
+        { file: "assets/Fengari.mp3", display: "Fengari" },
+        { file: "assets/Fidi.mp3", display: "Fidi" },
+        { file: "assets/Ilios.mp3", display: "Ilios" },
+        { file: "assets/Kou Kou.mp3", display: "Kou Kou" },
+        { file: "assets/Las Dolorosas.mp3", display: "Las Dolorosas" },
+        { file: "assets/Mangas.mp3", display: "Mangas" },
+        { file: "assets/Maron.mp3", display: "Maron" },
+        { file: "assets/Mexicali.mp3", display: "Mexicali" },
+        { file: "assets/Nodriza.mp3", display: "Nodriza" },
+        { file: "assets/Pieza_1.mp3", display: "Pieza 1" },
+        { file: "assets/Pieza_2.mp3", display: "Pieza 2" },
+        { file: "assets/Pieza_3.mp3", display: "Pieza 3" },
+        { file: "assets/Pieza_4.mp3", display: "Pieza 4" },
+        { file: "assets/Pieza_5.mp3", display: "Pieza 5" },
+        { file: "assets/Postal.mp3", display: "Postal" },
+        { file: "assets/Psari.mp3", display: "Psari" },
+        { file: "assets/Rosarito.mp3", display: "Rosarito" },
+        { file: "assets/Salada.mp3", display: "Salada" },
+        { file: "assets/Sierra.mp3", display: "Sierra" },
+        { file: "assets/SoloElastico.mp3", display: "Solo Elástico" },
+        { file: "assets/Tijuana.mp3", display: "Tijuana" },
+        { file: "assets/Vestido.mp3", display: "Vestido" },
+      ].sort((a, b) => a.display.localeCompare(b.display));
+
+      class MusicPlayer {
+        constructor() {
+          this.container = document.getElementById("player-grid");
+          this.currentPlayer = null;
+          this.players = [];
+          this.init();
+        }
+
+        init() {
+          if (!this.container) return;
+
+          tracks.forEach((track) => {
+            const card = document.createElement("div");
+            card.className = "player-card";
+
+            card.innerHTML = `
+        <h3>${track.display}</h3>
+        <div class="custom-player">
+          <button class="play-btn">▶</button>
+          <span class="track-name">${track.display.substring(0, 8)}</span>
+          <div class="progress-area">
+            <div class="progress-bar">
+              <div class="progress-buffered"></div>
+              <div class="progress-filled"></div>
+            </div>
+          </div>
+          <span class="time-display">0:00</span>
+        </div>
+      `;
+
+            this.container.appendChild(card);
+            this.setupPlayer(card, track.file);
+          });
+        }
+
+        setupPlayer(card, src) {
+          const playBtn = card.querySelector(".play-btn");
+          const progressFilled = card.querySelector(".progress-filled");
+          const progressBuffered = card.querySelector(".progress-buffered");
+          const progressBar = card.querySelector(".progress-bar");
+          const timeDisplay = card.querySelector(".time-display");
+
+          let audio = null;
+
+          const player = {
+            audio,
+            playBtn,
+            progressFilled,
+            progressBuffered,
+            progressBar,
+            timeDisplay,
+            isPlaying: false,
+            src,
+          };
+
+          playBtn.addEventListener("click", () => {
+            // create audio only when needed
+            if (!player.audio) {
+              player.audio = new Audio(src);
+              player.audio.preload = "metadata"; // minimal load
+              this.attachAudioEvents(player);
+            }
+
+            if (
+              this.currentPlayer &&
+              this.currentPlayer !== player &&
+              this.currentPlayer.isPlaying
+            ) {
+              this.pausePlayer(this.currentPlayer);
+            }
+
+            if (player.isPlaying) {
+              this.pausePlayer(player);
+            } else {
+              this.playPlayer(player);
+            }
+          });
+
+          this.players.push(player);
+        }
+
+        attachAudioEvents(player) {
+          const {
+            audio,
+            progressFilled,
+            progressBuffered,
+            progressBar,
+            timeDisplay,
+          } = player;
+
+          audio.addEventListener("timeupdate", () => {
+            if (!audio.duration) return;
+
+            const percent = (audio.currentTime / audio.duration) * 100;
+            progressFilled.style.width = percent + "%";
+
+            const mins = Math.floor(audio.currentTime / 60);
+            const secs = Math.floor(audio.currentTime % 60);
+            timeDisplay.textContent = `${mins}:${secs.toString().padStart(2, "0")}`;
+          });
+
+          audio.addEventListener("progress", () => {
+            if (audio.buffered.length && audio.duration) {
+              const bufferedEnd = audio.buffered.end(audio.buffered.length - 1);
+              const percent = (bufferedEnd / audio.duration) * 100;
+              progressBuffered.style.width = percent + "%";
+            }
+          });
+
+          audio.addEventListener("ended", () => {
+            this.pausePlayer(player);
+            progressFilled.style.width = "0%";
+            timeDisplay.textContent = "0:00";
+          });
+
+          progressBar.addEventListener("click", (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const percent = (e.clientX - rect.left) / rect.width;
+            if (audio.duration) {
+              audio.currentTime = percent * audio.duration;
+            }
+          });
+        }
+
+        playPlayer(player) {
+          player.audio.preload = "auto"; // start buffering
+          player.audio.play();
+
+          player.isPlaying = true;
+          player.playBtn.textContent = "⏸";
+          player.playBtn.classList.add("playing");
+          this.currentPlayer = player;
+        }
+
+        pausePlayer(player) {
+          player.audio.pause();
+          player.isPlaying = false;
+          player.playBtn.textContent = "▶";
+          player.playBtn.classList.remove("playing");
+
+          if (this.currentPlayer === player) {
+            this.currentPlayer = null;
+          }
+        }
+      }
+
+      // Inicializar reproductor
+      document.addEventListener("DOMContentLoaded", () => {
+        new MusicPlayer();
+      });
+
+      // Sistema de idiomas
+      document.addEventListener("DOMContentLoaded", () => {
+        const langBtns = document.querySelectorAll(".lang-btn");
+        const elementsToTranslate = {};
+
+        // Recolectar elementos traducibles
+        for (let id in translations.es) {
+          const element = document.getElementById(id);
+          if (element) {
+            elementsToTranslate[id] = element;
+          }
+        }
+
+        // Función para cambiar idioma
+        function setLanguage(lang) {
+          if (!translations[lang]) return;
+
+          // Actualizar textos
+          for (let id in translations[lang]) {
+            const element = elementsToTranslate[id];
+            if (element) {
+              if (
+                element.tagName === "INPUT" ||
+                element.tagName === "TEXTAREA"
+              ) {
+                element.placeholder = translations[lang][id];
+              } else if (element.tagName === "SELECT") {
+                // Para selects, necesitamos manejar las options
+                if (id === "select-interest" || id === "select-experience") {
+                  // El placeholder del select se maneja con la option selected
+                  const options = element.querySelectorAll("option");
+                  options.forEach((opt) => {
+                    const optId = opt.id;
+                    if (optId && translations[lang][optId]) {
+                      opt.textContent = translations[lang][optId];
+                    }
+                  });
+                }
+              } else if (element.tagName === "BUTTON" && id === "submit-btn") {
+                element.textContent = translations[lang][id];
+              } else {
+                element.textContent = translations[lang][id];
+              }
+            }
+          }
+
+          // Actualizar botones activos
+          langBtns.forEach((btn) => {
+            btn.classList.toggle("active", btn.dataset.lang === lang);
+          });
+
+          // Guardar preferencia
+          localStorage.setItem("preferred-language", lang);
+          document.documentElement.lang = lang;
+        }
+
+        // Detectar idioma preferido
+        const savedLang = localStorage.getItem("preferred-language");
+        const browserLang = navigator.language.startsWith("es") ? "es" : "en";
+        const initialLang = savedLang || browserLang;
+
+        // Configurar idioma inicial
+        setLanguage(initialLang);
+
+        // Event listeners para botones
+        langBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            setLanguage(btn.dataset.lang);
+          });
+        });
+      });
+
+      // Lazy loading para imágenes
+      if ("loading" in HTMLImageElement.prototype) {
+        document
+          .querySelectorAll("img")
+          .forEach((img) => (img.loading = "lazy"));
+      }
+    </script>
+
+    <!-- Formulario -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("musicContactForm");
+        const feedback = document.getElementById("formFeedback");
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          const formData = new FormData(form);
+          const data = Object.fromEntries(formData);
+
+          feedback.style.display = "block";
+          feedback.className = "form-feedback success";
+          feedback.textContent = "¡Mensaje enviado! Te contactaré pronto.";
+
+          form.reset();
+
+          // Ocultar mensaje después de 5 segundos
+          setTimeout(() => {
+            feedback.style.display = "none";
+          }, 5000);
+        });
+      });
+    </script>
+  </body>
+</html>
